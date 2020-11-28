@@ -35,7 +35,7 @@ public class Board extends JPanel implements ActionListener {
     private boolean rightDirection = true;
     private boolean upDirection = false;
     private boolean downDirection = false;
-    private boolean inGame = false;
+    private boolean inGame = true;
     
     private Timer timer;
     private Image ball;
@@ -62,7 +62,6 @@ public class Board extends JPanel implements ActionListener {
 
         ImageIcon image_dot = new ImageIcon("src/resources/dot.png");
         ball = image_dot.getImage();
-
 
         ImageIcon image_apple = new ImageIcon("src/resources/apple.png");
         apple = image_apple.getImage();
