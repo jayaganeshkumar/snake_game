@@ -50,7 +50,7 @@ public class Board extends JPanel implements ActionListener {
     private void initBoard() {
 
         addKeyListener(new TAdapter());
-        setBackground(Color.blue);
+        setBackground(Color.black);
         setFocusable(true);
 
         setPreferredSize(new Dimension(frame_width, frame_height));
@@ -119,7 +119,7 @@ public class Board extends JPanel implements ActionListener {
             gameOver(g);
         }        
     }
-    
+
     private void gameOver(Graphics g) {
         
         String msg = "Score: "+count;
